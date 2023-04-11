@@ -1,0 +1,229 @@
+/* Общие стили */
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	margin: 0;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+/* Стили для хедера */
+header {
+	background-color: #2c3e50;
+	color: #fff;
+	padding-top: 1px;
+	padding-bottom: 20px;
+	text-align: center;
+}
+
+header h1 {
+	font-size: 36px;
+	margin: 0;
+}
+
+nav {
+	margin-top: 20px;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav li {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+nav li:last-child {
+	margin-right: 0;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+}
+
+nav a:hover {
+	text-decoration: underline;
+}
+
+/* Стили для слайдера */
+.slider {
+	position: relative;
+}
+
+.slide {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.slide img {
+	max-width: 100%;
+}
+
+.play-button, .prev-button, .next-button {
+	background-color: #fff;
+	border: none;
+	border-radius: 50%;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 30px;
+	height: 50px;
+	line-height: 50px;
+	margin-top: -25px;
+	position: absolute;
+	top: 50%;
+	width: 50px;
+}
+
+.play-button {
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.prev-button {
+	left: 20px;
+}
+
+.next-button {
+	right: 20px;
+}
+
+.play-button:hover, .prev-button:hover, .next-button:hover {
+	background-color: #ccc;
+}
+
+/* Стили для кнопки */
+.btn {
+	background-color: #2c3e50;
+	border: none;
+	border-radius: 5px;
+	color: #fff;
+	display: inline-block;
+	font-size: 18px;
+	margin-top: 20px;
+	padding: 10px 20px;
+	text-decoration: none;
+	transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+	background-color: #34495e;
+}
+
+/* Стили для секции с продуктами */
+.products {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 40px 0;
+}
+
+.product {
+	background-color: #f2f2f2;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	margin: 20px;
+	padding: 20px;
+	text-align: center;
+	width: 300px;
+}
+
+.product img {
+	border-radius: 5px;
+	max-width: 100%;
+}
+
+.product h3 {
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+
+.product p {
+	font-size: 16px;
+	line-height: 1.5;
+	margin-bottom: 20px;
+}
+
+/* Стили для секции контактов */
+.contact {
+	margin-top: 40px;
+	text-align: center;
+}
+
+.contact form {
+	display: flex;
+	flex-direction: column;
+	margin-top: 20px;
+}
+
+.contact label {
+font-size: 18px;
+margin-bottom: 10px;
+}
+
+.contact input, .contact textarea {
+border-radius: 5px;
+border: none;
+padding: 10px;
+margin-bottom: 20px;
+}
+
+.contact input[type="submit"] {
+background-color: #2c3e50;
+border: none;
+border-radius: 5px;
+color: #fff;
+font-size: 18px;
+padding: 10px 20px;
+text-align: center;
+text-decoration: none;
+transition: background-color 0.3s ease;
+}
+
+.contact input[type="submit"]:hover {
+background-color: #34495e;
+}
+
+footer {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+footer p {
+  margin: 0;
+}
+
+.hero {
+text-align: center;
+}
+
+.about {
+text-align: center;
+margin: 150px;
+}
+
+.products {
+	position: relative;
+}
+
+.products h2 {
+	position: absolute;
+	top: -80px;
+}
